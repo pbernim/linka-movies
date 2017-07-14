@@ -1,0 +1,40 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Global fronten / Backend custom Css
+
+// Navigation style
+.navbar-default {
+    background-color: #4373a7;
+    border-color: #428bca;
+    border-radius: 0; 
+
+    .navbar-brand, .navbar-brand:hover, .navbar-brand:focus   {
+		color: #fff;		
+	}
+
+	.navbar-nav > li > a {
+		color: #fff;
+		&:hover {
+			background-color: #428bca
+		}
+	}
+
+	.navbar-toggle  {
+		border-color: #428bca;
+		.icon-bar {
+			background: #fff !important;
+		}
+		&:hover, &:focus {
+			background-color: #428bca;
+		}
+	}
+}
+

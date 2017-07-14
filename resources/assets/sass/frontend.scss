@@ -1,0 +1,28 @@
+// Making all images appear with the same height in bootstrap
+.equalize-row {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+	.poster-box {
+		margin-bottom: 20px;
+
+		.thumbnail {
+			max-height: 400px;
+			margin: auto;
+		}
+
+		.captation {
+			width: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}	
+	}
+
+}
+
