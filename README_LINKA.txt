@@ -1,7 +1,20 @@
 1.- Instalar proyecto 'movies' en Laravel 5.4
+
 composer create-project --prefer-dist laravel/laravel movies
 
-2.- Setup database (MySQL/MariaDB)
+2.- Bajar y copiar aplicación
+
+https://github.com/pbernim/linka-movies/archive/master.zip
+
+php artisan config:clear
+php artisan config:cache
+
+
+3.- Bajar repositorios
+composer update
+npm install
+
+4.- Config database (MySQL/MariaDB)
 Create database 'movies' (utf8-unicode-ci)
 
 Setup  .env
@@ -9,21 +22,17 @@ DB_DATABASE=movies
 DB_USERNAME=root
 DB_PASSWORD=<password>
 
-3.- Setup Data
+5.- Load Data
 php artisan migrate:refresh --seed
 
-4.- First user credentials
-name: Linka admin user
-linka@gmail.com
-password: secret
-
-4.- Bajar repositorios
-composer update
-npm install
-
-5.- Setup imágenes. 
+4.- Setup Storage for images 
 Por razones de seguridad las imágenes se guardan en storage/app/public. Es necesario crear un enlace simbólico desde public/storage a storage/app/public
+
 php artisan storage:link
+
+7.- Default user credentials (you can also register yourself)
+l: linka@gmail.com
+p: secret
 
 Projecto infos:
 -----------------------------------------------------

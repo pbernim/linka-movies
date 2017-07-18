@@ -19,7 +19,7 @@ Auth::routes();
 
 Route::middleware('auth')->prefix('admin')->group(function(){
 
-	Route::resource('movies', 'movieController');
+	Route::resource('movies', 'MovieController');
 
 });
 
